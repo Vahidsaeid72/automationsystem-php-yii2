@@ -1,0 +1,16 @@
+﻿1401-07-06 15:28:28> Program: Starting Squirrel Updater: --createShortcut=Figma.exe
+1401-07-06 15:28:29> ApplyReleasesImpl: About to create shortcuts for Figma.exe, rootAppDir C:\Users\datis\AppData\Local\Figma
+1401-07-06 15:28:29> ApplyReleasesImpl: Creating shortcut for Figma.exe => C:\Users\datis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Figma, Inc.\Figma.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: About to save shortcut: C:\Users\datis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Figma, Inc.\Figma.lnk (target C:\Users\datis\AppData\Local\Figma\Figma.exe, workingDir C:\Users\datis\AppData\Local\Figma\app-116.3.8, args , toastActivatorCSLID a486d093-93e6-5036-b780-89550fe1ed09)
+1401-07-06 15:28:29> ApplyReleasesImpl: Creating shortcut for Figma.exe => C:\Users\datis\Desktop\Figma.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: About to save shortcut: C:\Users\datis\Desktop\Figma.lnk (target C:\Users\datis\AppData\Local\Figma\Figma.exe, workingDir C:\Users\datis\AppData\Local\Figma\app-116.3.8, args , toastActivatorCSLID a486d093-93e6-5036-b780-89550fe1ed09)
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Alpari MT4.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: File Explorer.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Firefox.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: MofidTrader.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: psiphon3.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Telegram.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Visual Studio Code.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Windsor Brokers MT4.lnk
+1401-07-06 15:28:29> ApplyReleasesImpl: Examining Pin: Word 2016.lnk

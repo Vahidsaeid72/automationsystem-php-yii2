@@ -1,0 +1,52 @@
+td {
+  font-size: 12px;
+}
+
+th {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.confirm-btn {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.confirm-btn:hover {
+  background: green;
+}
+
+.modal-dialog {
+  min-width: 80vw !important;
+}
+
+.modal-mg {
+  min-width: 30vw !important;
+}
+
+/* #jobsGridView table thead th {
+  background-color: #ccf5ff;
+}
+#jobsRotationGridView-container table thead th {
+  background-color: #fdc0c0;
+} */
+table thead th {
+  background-color: #f9fdc0 !important;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.right_contex {
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.right_contex_icon {
+  margin-left: 10px;
+}

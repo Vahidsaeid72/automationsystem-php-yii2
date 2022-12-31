@@ -1,0 +1,119 @@
+<!---->
+<div role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" id="search_letters" data-backdrop="static" data-keyboard="false"  class="fade modal fade-scale" role="dialog" tabindex="-1" style="display: none; padding-right: 19px;">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content">
+            <div class="modal-header " style="background-color: white">
+                <button type="button" class="close cl_search" style="float: right"  data-dismiss="modal" aria-hidden="true"><i style="opacity: 1;font-size: 25px;color: red" class="fa fa-close"></i></button>
+                <h4 style="text-align: center;color: black">?????</h4>
+            </div>
+            <div class="modal-body">
+
+                <div id="search_letters_box">
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---->
+
+
+
+
+CKEDITOR.replace('ckeditor');
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------
+
+
+
+$("#frm-updating-form").on('beforeSubmit',function(e) {
+   NProgress.start();
+ var form = $(this);
+  
+ var formData = form.serialize();
+ 
+ $.ajax({
+ 
+ url: form.attr("action"),
+ type: form.attr("method"),
+ data: formData,
+ 
+         success: function(data) {
+    
+    $(".letters-form").html('');
+    $.pjax.reload({container:'#letters-index',async:false});
+    $(".cl_add_draft").trigger('click');
+
+  
+            NProgress.done();
+           
+         }
+ 
+ });
+    
+}).on('submit',function(e) {
+    
+   $(document).off('submit','#updating-form form[data-pjax]');
+
+    e.preventDefault();
+    
+});
+--------------------------------------------------
+
+
+  swal({
+  title: "??? ???????",
+  text: "??? ????? ???????",
+  type: "error",
+  showCancelButton: true,
+  confirmButtonText: "???",
+  cancelButtonText: "??",
+  closeOnConfirm: true,
+  confirmButtonClass: "btn-danger",
+  allowEscapeKey:true,
+  focusConfirm:false,
+  focusCancelButton:true,
+  allowEnterKey:false
+
+}, function(){
+   NProgress.start();
+    $.post('$DeleteLetter',{id:id},function(data) {
+        
+        
+       $.pjax.reload({container:'#letters-index',async:false});
+       
+                 swal({
+                  title: "",
+                  text: "??????? ??? ??",
+                  type: "success",
+                  confirmButtonClass: "btn-info",
+                  confirmButtonText: "??????",
+                  closeOnConfirm: false
+                });
+                NProgress.done();
+
+    });
+    
+});
+
+
+
+
+
+------------------------------------------------------
+
+ MyWindow=window.open('/automation/receiveletter?hash='+id+'','MyWindow','toolbar=yes,location=yes,directories=yes,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=500,height=500,left=500,top=170');
